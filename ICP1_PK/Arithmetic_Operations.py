@@ -1,0 +1,6 @@
+a = int(input("Enter the value a: "))
+b = int(input("Enter the value b: "))
+print("Sum of the numbers is ", a + b)
+print("Difference between the numbers is ", a - b)
+print("Product of the numbers is ", a * b)
+print("Division of the numbers is ", a / b)
