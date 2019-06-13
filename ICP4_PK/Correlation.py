@@ -22,4 +22,3 @@ titanic_train["Embarked"] = titanic_train["Embarked"].fillna("S")
 result = titanic_train[['Sex', 'Survived']].groupby(['Sex'], as_index=False).mean().sort_values(by='Survived', ascending=False)
 print('The correlation of survival with gender is :')
 print(result)
-
