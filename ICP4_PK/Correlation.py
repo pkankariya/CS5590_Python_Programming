@@ -16,11 +16,10 @@ print(titanic_test.info())
 
 # Fixing null values
 print(titanic_train.isnull().sum())
-
 titanic_train["Embarked"] = titanic_train["Embarked"].fillna("S")
-#titanic_train.drop("Cabin", axis=1, inplace=True)
 
 # Analyze pivoting features
 result = titanic_train[['Sex', 'Survived']].groupby(['Sex'], as_index=False).mean().sort_values(by='Survived', ascending=False)
+print('The correlation of survival with gender is :')
 print(result)
 
