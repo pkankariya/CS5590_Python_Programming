@@ -35,7 +35,7 @@ km.fit(x_pca)
 
 # Evaluation of the clusters accuracy
 y_cluster_KMeans = km.predict(x_pca)
-score = metrics.silhouette_score(x_pca, y_cluster_KMeans, metric='euclidean', sample_size=50)
+score = metrics.silhouette_score(x_pca, y_cluster_KMeans, metric='euclidean', sample_size=42)
 print('Silhoutee Score of the Clusters using PCA is ', score)
 
 # Elbow point computation to determine optimum number of clusters

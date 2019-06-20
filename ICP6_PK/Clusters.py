@@ -47,7 +47,7 @@ km.fit(x)
 
 # Evaluation of the clusters accuracy
 y_cluster_KMeans = km.predict(x)
-score = metrics.silhouette_score(x, y_cluster_KMeans, metric='euclidean', sample_size=15)
+score = metrics.silhouette_score(x, y_cluster_KMeans, sample_size=25)
 print('Silhoutee Score of the Clusters is ', score)
 
 # Elbow point computation to determine optimum number of clusters
