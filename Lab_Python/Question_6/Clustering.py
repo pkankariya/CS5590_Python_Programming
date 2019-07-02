@@ -68,5 +68,5 @@ km.fit(x)
 
 # Evaluation of the clusters accuracy
 y_cluster_KMeans = km.predict(x)
-scoreCluster = metrics.silhouette_score(x, y_cluster_KMeans, sample_size=50)
+scoreCluster = metrics.silhouette_score(x, y_cluster_KMeans, sample_size=40)
 print('Silhoutee Score of the data upon clustering is ', scoreCluster)

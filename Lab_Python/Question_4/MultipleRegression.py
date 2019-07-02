@@ -69,7 +69,7 @@ print('RMSE of the model fit is ', rsme)
 # Graphs of evaluation results
 actual_result = y_test
 plt.scatter(prediction, actual_result, alpha=.75, color='b')  #alpha helps to show overlapping data
-plt.xlabel('Predicted Quality')
-plt.ylabel('Actual Quality')
+plt.xlabel('Predicted Median Valuation of Owner-occupied Homes')
+plt.ylabel('Actual Median Valuation of Owner-occupied Homes')
 plt.title('Multiple Regression of Median Valuation of Owner-occupied Homes')
 plt.show()
